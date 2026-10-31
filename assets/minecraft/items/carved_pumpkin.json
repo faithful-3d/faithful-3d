@@ -9,6 +9,22 @@
       {
         "type": "minecraft:model",
         "model": "minecraft:custom/pumpkin/pumpkin_stem"
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+          {
+            "when": "head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:custom/pumpkin/carved_pumpkin_face"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:empty"
+        }
       }
     ]
   }
